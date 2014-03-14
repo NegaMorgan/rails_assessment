@@ -1,7 +1,7 @@
-Rails Assesment
+Rails Assessment
 
-The answers to this assesment should be submitted in the form of a link to a github repo
-The repository should be a rails app with one additional file in the root directory called assesment.txt
+The answers to this assessment should be submitted in the form of a link to a Github repo
+The repository should be a rails app with one additional file in the root directory called assessment.txt
 
 Create a blog.
 
@@ -9,7 +9,7 @@ The blog should have the ability to have posts and comments on posts.  There's n
 
 From any post I should be able to both see all the comments and add a comment myself.
 
-Questions to be answered in the assesment.txt file.
+Questions to be answered in the assessment.txt file.
 
 How does rails communicate with the database?  Please be thorough in discussing all the config files and pieces of rails necessary to communicate with the database.
 
