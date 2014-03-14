@@ -12,19 +12,34 @@ From any post I should be able to both see all the comments and add a comment my
 Questions to be answered in the assessment.txt file.
 
 How does rails communicate with the database?  Please be thorough in discussing all the config files and pieces of rails necessary to communicate with the database.
+#=> Rails communicates with the database via ActiveRecord (ORM). RESTful architecture is assumed and rails automagically maps classes to their corresponding db tables. Rails models inherit from ActiveRecord::Base, which provides a collection of methods to CRUD the associated resources.
 
 What is a resource?
+#=> A method for creating routes in rails
 
 What are the standard RESTful routes for a resource?
+#=> GET     /resource/new
+#=> POST    /resource
+#=> GET     /resource
+#=> GET     /resource/edit
+#=> PUT     /resource
+#=> DELETE  /resource
 
 What is CRUD?
+#=> Create, Read, Update, Delete
 
 What is REST?
+#=> REpresentational State Transfer
 
 What is the difference between CRUD and REST?
+#=> CRUD refers to "things that can be done to a resource"; REST is a collection of practices that enforce on semantic naming.
 
 Describe the flow of a request from a users browser through the rails stack and back.
+#=> Requests come in via routes that trigger specific controller actions. The controllers talk to the models, who in turn request specific records from the database (or add new records, depending on the nature of the request). The records are returned from the model back to the controller which passes it along to the appropriate view based on the route request. The end user is then presented with this view.
 
 What are HTTP verbs?
+#=> CRUD actions that can be performed on resources. Includes GET, POST, PATCH, PUT, and DELETE amongst others. 
 
-Why do we use migrations.
+Why do we use migrations?
+#=> To version control our database changes
+
